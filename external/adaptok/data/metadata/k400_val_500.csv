@@ -1,0 +1,501 @@
+id,path,action,label
+0,data/k400/val/dZpNgW8_5zI_000003_000013.mp4,air drumming,1
+1,data/k400/val/pj1OiSpSFI0_000022_000032.mp4,air drumming,1
+2,data/k400/val/jJZQ9oDX2uw_000007_000017.mp4,applauding,3
+3,data/k400/val/oBYZWvlI8Uk_000025_000035.mp4,applauding,3
+4,data/k400/val/svVhMowxtT0_000000_000010.mp4,applauding,3
+5,data/k400/val/TYqirauBM1w_000007_000017.mp4,applying cream,4
+6,data/k400/val/Z0Gm7WTyk-o_000051_000061.mp4,applying cream,4
+7,data/k400/val/36E29x22tnQ_000018_000028.mp4,archery,5
+8,data/k400/val/O9cTHUPbLE8_000090_000100.mp4,archery,5
+9,data/k400/val/fpz4ttwst1U_000180_000190.mp4,arranging flowers,7
+10,data/k400/val/pYudEN14MGY_000199_000209.mp4,arranging flowers,7
+11,data/k400/val/PI3Hy8LsWIo_000012_000022.mp4,assembling computer,8
+12,data/k400/val/Yqf6O4LBZLU_000265_000275.mp4,assembling computer,8
+13,data/k400/val/ZCcyLEDC_Kg_000145_000155.mp4,assembling computer,8
+14,data/k400/val/KJgpJjhdKfM_000723_000733.mp4,auctioning,9
+15,data/k400/val/bUKQCyQ52jk_000068_000078.mp4,auctioning,9
+16,data/k400/val/W2MMCDoVqFY_000018_000028.mp4,baby waking up,10
+17,data/k400/val/UD4Ar_Y1_w8_000025_000035.mp4,balloon blowing,12
+18,data/k400/val/4-dI5vRgGWQ_000008_000018.mp4,bandaging,13
+19,data/k400/val/E6KByvFUj_U_000000_000010.mp4,bandaging,13
+20,data/k400/val/wLA_-n4Ogk4_000035_000045.mp4,bandaging,13
+21,data/k400/val/7h-oiNSeFWI_000296_000306.mp4,bartending,15
+22,data/k400/val/MjBWljbRcxg_000007_000017.mp4,bartending,15
+23,data/k400/val/TuCc2RwG2fM_000354_000364.mp4,bartending,15
+24,data/k400/val/kzXmdd6Z8U4_000004_000014.mp4,bee keeping,17
+25,data/k400/val/tQxCenlYRm8_000105_000115.mp4,bee keeping,17
+26,data/k400/val/-2JgjPsy4Eo_000077_000087.mp4,belly dancing,18
+27,data/k400/val/10DaYl4acVI_000346_000356.mp4,belly dancing,18
+28,data/k400/val/hRisIK4NSds_000096_000106.mp4,belly dancing,18
+29,data/k400/val/ka8f2sSmmOM_000426_000436.mp4,belly dancing,18
+30,data/k400/val/F56MNeSubws_000003_000013.mp4,bench pressing,19
+31,data/k400/val/gtfY2jotzkY_000089_000099.mp4,bench pressing,19
+32,data/k400/val/ixQaUaFKlTU_000002_000012.mp4,bench pressing,19
+33,data/k400/val/UdVsbIeCgDQ_000027_000037.mp4,bending back,20
+34,data/k400/val/oPwOZXj-JL8_000123_000133.mp4,bending back,20
+35,data/k400/val/o28yOO_4fAE_000014_000024.mp4,bending metal,21
+36,data/k400/val/00cwEcZZcu4_000003_000013.mp4,biking through snow,22
+37,data/k400/val/w3qNrvPQcU8_000055_000065.mp4,blasting sand,23
+38,data/k400/val/Scp9i3VljRI_000029_000039.mp4,blowing leaves,25
+39,data/k400/val/0WOMnirXVsM_000003_000013.mp4,blowing nose,26
+40,data/k400/val/AV9UYjCD4wY_000011_000021.mp4,blowing nose,26
+41,data/k400/val/MlqgQRlzggk_000020_000030.mp4,blowing nose,26
+42,data/k400/val/qvg0XIzGHCg_000000_000010.mp4,blowing nose,26
+43,data/k400/val/ZRkNx8RWKqg_000014_000024.mp4,blowing out candles,27
+44,data/k400/val/go5_N9JnL0U_000002_000012.mp4,blowing out candles,27
+45,data/k400/val/tSKKYB6t51g_000006_000016.mp4,blowing out candles,27
+46,data/k400/val/0gevNPaaqfI_000004_000014.mp4,bobsledding,28
+47,data/k400/val/Ue3XxQ-6cz8_000237_000247.mp4,bobsledding,28
+48,data/k400/val/giUxmMn8Nfs_000129_000139.mp4,bookbinding,29
+49,data/k400/val/Y5wCEMx8RQY_000046_000056.mp4,bouncing on trampoline,30
+50,data/k400/val/YMO199qZ6SA_000182_000192.mp4,brushing hair,36
+51,data/k400/val/fSi87zV0arw_000403_000413.mp4,brushing hair,36
+52,data/k400/val/INNDIp9X43M_000066_000076.mp4,brushing teeth,37
+53,data/k400/val/p-kbRhTdyiQ_000019_000029.mp4,brushing teeth,37
+54,data/k400/val/pieIwdfllyo_000284_000294.mp4,building cabinet,38
+55,data/k400/val/ryB5YcK2PMY_000019_000029.mp4,building cabinet,38
+56,data/k400/val/HUOtyUKOE1o_000208_000218.mp4,building shed,39
+57,data/k400/val/nROCRXkN99Q_000230_000240.mp4,building shed,39
+58,data/k400/val/0RRkBEUk1EY_000040_000050.mp4,bungee jumping,40
+59,data/k400/val/Bsf3wxPNt9o_000000_000010.mp4,bungee jumping,40
+60,data/k400/val/r5tdw9ir5nY_000014_000024.mp4,bungee jumping,40
+61,data/k400/val/SJfxkFQjS8o_000083_000093.mp4,canoeing or kayaking,42
+62,data/k400/val/XbcgFbULacs_000162_000172.mp4,canoeing or kayaking,42
+63,data/k400/val/bVuTVj3Px5I_000023_000033.mp4,canoeing or kayaking,42
+64,data/k400/val/pOdpZ2zDTOo_000094_000104.mp4,carrying baby,44
+65,data/k400/val/Xz7qiB-YcHI_000003_000013.mp4,cartwheeling,45
+66,data/k400/val/YP4Ne_eK4A0_000018_000028.mp4,cartwheeling,45
+67,data/k400/val/h6pkpA-4mgc_000560_000570.mp4,cartwheeling,45
+68,data/k400/val/H2y1th4WaWU_000056_000066.mp4,carving pumpkin,46
+69,data/k400/val/RO5ZtCUbX0c_001443_001453.mp4,catching fish,47
+70,data/k400/val/LQH6hZT6ZbI_000116_000126.mp4,catching or throwing baseball,48
+71,data/k400/val/qKKFKvJg_5E_000005_000015.mp4,catching or throwing baseball,48
+72,data/k400/val/7XsWZFqAl8E_000008_000018.mp4,catching or throwing frisbee,49
+73,data/k400/val/JBnNU6Vgoog_000013_000023.mp4,catching or throwing softball,50
+74,data/k400/val/5YJPpj_ABz8_000161_000171.mp4,celebrating,51
+75,data/k400/val/PfP2NE7glKg_000079_000089.mp4,celebrating,51
+76,data/k400/val/--rC9Wkh6HA_000179_000189.mp4,changing oil,52
+77,data/k400/val/bPpnDXd0MQs_000013_000023.mp4,changing oil,52
+78,data/k400/val/auHqPVQAz5E_000067_000077.mp4,changing wheel,53
+79,data/k400/val/At8HVW4DMZ8_000164_000174.mp4,checking tires,54
+80,data/k400/val/OnU1Hr__jlY_000002_000012.mp4,chopping wood,56
+81,data/k400/val/Xz9FubtN8es_000051_000061.mp4,chopping wood,56
+82,data/k400/val/Z5t3mmmhx-E_000002_000012.mp4,chopping wood,56
+83,data/k400/val/P7DWpfyNvmU_000041_000051.mp4,clapping,57
+84,data/k400/val/tjCCt9R_fUw_000025_000035.mp4,clay pottery making,58
+85,data/k400/val/6jWeceCpqgs_000009_000019.mp4,cleaning floor,60
+86,data/k400/val/FSKRgCwmzbA_000304_000314.mp4,cleaning gutters,61
+87,data/k400/val/43h-f5Zwxn4_000091_000101.mp4,cleaning pool,62
+88,data/k400/val/qL9ique1Kw0_000037_000047.mp4,cleaning pool,62
+89,data/k400/val/1um4PJe41wY_000105_000115.mp4,cleaning shoes,63
+90,data/k400/val/S7uOf9mBFR4_000031_000041.mp4,cleaning shoes,63
+91,data/k400/val/xlYGmQ6Iv5w_000166_000176.mp4,cleaning shoes,63
+92,data/k400/val/oz8xv1gVM40_000008_000018.mp4,cleaning toilet,64
+93,data/k400/val/mMGThQwdsis_000001_000011.mp4,cleaning windows,65
+94,data/k400/val/0tIJZogdc9U_000022_000032.mp4,climbing a rope,66
+95,data/k400/val/6Lz09qQhHkM_000001_000011.mp4,climbing a rope,66
+96,data/k400/val/_3qg-oAr7b0_000019_000029.mp4,climbing a rope,66
+97,data/k400/val/93sxC_WUAOs_000096_000106.mp4,climbing ladder,67
+98,data/k400/val/PeJZqRzYoq4_000043_000053.mp4,climbing ladder,67
+99,data/k400/val/zp2rMg-FF9E_000004_000014.mp4,climbing ladder,67
+100,data/k400/val/Zdj9dPccQWQ_000000_000010.mp4,climbing tree,68
+101,data/k400/val/cyLU6Ww0eJU_000058_000068.mp4,climbing tree,68
+102,data/k400/val/ptOCEg3wAj0_000007_000017.mp4,climbing tree,68
+103,data/k400/val/u3JigZZPHKI_000011_000021.mp4,contact juggling,69
+104,data/k400/val/HXv-lYGMek8_000085_000095.mp4,cooking chicken,70
+105,data/k400/val/PBViVWD9KKk_000026_000036.mp4,cooking chicken,70
+106,data/k400/val/whHcf5m4AGE_000305_000315.mp4,cooking egg,71
+107,data/k400/val/xjyGCSOd4nw_000196_000206.mp4,cooking egg,71
+108,data/k400/val/D7R6eFwMd4Y_000041_000051.mp4,counting money,74
+109,data/k400/val/LE1E-RNJ5nY_000091_000101.mp4,counting money,74
+110,data/k400/val/T9LhYz-yD6o_000005_000015.mp4,counting money,74
+111,data/k400/val/fDcujV8hkS8_000025_000035.mp4,country line dancing,75
+112,data/k400/val/7DnnaBXnLlM_000013_000023.mp4,cracking neck,76
+113,data/k400/val/X0b91yH8WAk_000004_000014.mp4,cracking neck,76
+114,data/k400/val/4vURKSUYHLA_000042_000052.mp4,crawling baby,77
+115,data/k400/val/IvKzJDMEDxg_000013_000023.mp4,crawling baby,77
+116,data/k400/val/QiXNmz5OzR0_000071_000081.mp4,crawling baby,77
+117,data/k400/val/ZVdAl-yh9m0_000002_000012.mp4,crossing river,78
+118,data/k400/val/_KXNqfUx5O0_000058_000068.mp4,crossing river,78
+119,data/k400/val/xni8jethSns_000035_000045.mp4,crying,79
+120,data/k400/val/W1c2gK-IS1I_000940_000950.mp4,curling hair,80
+121,data/k400/val/lQOvNQHgoQs_000362_000372.mp4,curling hair,80
+122,data/k400/val/ANk4rpu4dYk_000002_000012.mp4,cutting nails,81
+123,data/k400/val/ZnFfC_Goyqg_000022_000032.mp4,cutting nails,81
+124,data/k400/val/40N9F2Z7Pys_000019_000029.mp4,cutting pineapple,82
+125,data/k400/val/KBL-EIpmPrc_000014_000024.mp4,cutting pineapple,82
+126,data/k400/val/zarLXIVjjbc_000005_000015.mp4,cutting watermelon,83
+127,data/k400/val/_h6ZPj42QJU_000017_000027.mp4,dancing ballet,84
+128,data/k400/val/6Q7tpnuI6YI_000048_000058.mp4,dancing macarena,87
+129,data/k400/val/Ah9wI6ltIHo_000047_000057.mp4,dancing macarena,87
+130,data/k400/val/8LHvdxSF9Ek_000004_000014.mp4,deadlifting,88
+131,data/k400/val/e8-ya-6rqPw_000051_000061.mp4,deadlifting,88
+132,data/k400/val/zplKZpwToWc_000000_000010.mp4,deadlifting,88
+133,data/k400/val/dhilejpaR4U_000000_000010.mp4,decorating the christmas tree,89
+134,data/k400/val/kV6Ic-REzRA_000024_000034.mp4,decorating the christmas tree,89
+135,data/k400/val/i01DTEL_NOg_000020_000030.mp4,dining,91
+136,data/k400/val/4vv-m4xCVbc_000196_000206.mp4,diving cliff,93
+137,data/k400/val/FkA9doylBHQ_000013_000023.mp4,diving cliff,93
+138,data/k400/val/ZCITJQfuVCY_000000_000010.mp4,diving cliff,93
+139,data/k400/val/xo0qjV35hXI_000009_000019.mp4,diving cliff,93
+140,data/k400/val/AiU2O75kCkU_000207_000217.mp4,dodgeball,94
+141,data/k400/val/7zc_qvG2bAw_000200_000210.mp4,doing aerobics,95
+142,data/k400/val/pM-LMevoPNU_000060_000070.mp4,doing aerobics,95
+143,data/k400/val/0HN9Iz8MoYU_000006_000016.mp4,doing laundry,96
+144,data/k400/val/CQiKFPAZ9wY_000003_000013.mp4,doing nails,97
+145,data/k400/val/lUxW1GHJAdY_000058_000068.mp4,doing nails,97
+146,data/k400/val/5S3_Z-ZLGto_000439_000449.mp4,drawing,98
+147,data/k400/val/0XHT4ID7Wkk_000004_000014.mp4,dribbling basketball,99
+148,data/k400/val/2R-MVTalZ8g_000037_000047.mp4,dribbling basketball,99
+149,data/k400/val/P23Dp774MZg_000012_000022.mp4,dribbling basketball,99
+150,data/k400/val/QSe393NpjYo_000030_000040.mp4,drinking,100
+151,data/k400/val/gDvxSxb3WuE_000188_000198.mp4,drinking,100
+152,data/k400/val/nvdXa6q8NKA_000118_000128.mp4,drinking,100
+153,data/k400/val/UzVKMR2PrkU_000049_000059.mp4,driving tractor,104
+154,data/k400/val/wnQOc9Q5oC0_000002_000012.mp4,driving tractor,104
+155,data/k400/val/LD9gRyLXxFQ_000171_000181.mp4,drumming fingers,106
+156,data/k400/val/eVDSBj0Efzc_000046_000056.mp4,drumming fingers,106
+157,data/k400/val/S5b7-MnHens_000003_000013.mp4,dunking basketball,107
+158,data/k400/val/3hLky31EThg_000006_000016.mp4,eating chips,112
+159,data/k400/val/QmkA3s7GZvY_000001_000011.mp4,eating chips,112
+160,data/k400/val/wWq0WfV4Vl0_000006_000016.mp4,eating chips,112
+161,data/k400/val/iR99L0gD0cs_000014_000024.mp4,eating hotdog,114
+162,data/k400/val/lJI9kP-zfXw_000161_000171.mp4,eating hotdog,114
+163,data/k400/val/4Rj1wq0DVZI_000000_000010.mp4,eating ice cream,115
+164,data/k400/val/l4PShHIN8Bk_000082_000092.mp4,eating ice cream,115
+165,data/k400/val/0lxXFtkgAdU_000000_000010.mp4,eating watermelon,117
+166,data/k400/val/Gvr1bO64FiM_000002_000012.mp4,eating watermelon,117
+167,data/k400/val/pLA62YSoEoM_000002_000012.mp4,eating watermelon,117
+168,data/k400/val/1Ld9WmSz1xc_000099_000109.mp4,egg hunting,118
+169,data/k400/val/_VrbefX-6vQ_000002_000012.mp4,egg hunting,118
+170,data/k400/val/c6a6nIiLJrU_000021_000031.mp4,egg hunting,118
+171,data/k400/val/zMMHc5kII8Q_000000_000010.mp4,exercising arm,119
+172,data/k400/val/8mP1LwGD-UQ_000039_000049.mp4,exercising with an exercise ball,120
+173,data/k400/val/D9fk5b14ikA_000058_000068.mp4,extinguishing fire,121
+174,data/k400/val/EM-TtOWDJXM_000011_000021.mp4,extinguishing fire,121
+175,data/k400/val/fSmzI8u_i9A_000005_000015.mp4,extinguishing fire,121
+176,data/k400/val/8heUql3B7hg_000010_000020.mp4,faceplanting,122
+177,data/k400/val/L0gKt2njQZw_000008_000018.mp4,feeding birds,123
+178,data/k400/val/rfzoYsbyjuw_000001_000011.mp4,feeding birds,123
+179,data/k400/val/46ZWhGzcjzM_000186_000196.mp4,feeding fish,124
+180,data/k400/val/JiAmagFKF6Q_000096_000106.mp4,feeding goats,125
+181,data/k400/val/YuNF6aIfF_U_000501_000511.mp4,filling eyebrows,126
+182,data/k400/val/bHXSPD6b_Hg_000101_000111.mp4,filling eyebrows,126
+183,data/k400/val/SDz4WqXRGmw_000074_000084.mp4,finger snapping,127
+184,data/k400/val/oDDOMvWOOxU_000003_000013.mp4,flipping pancake,129
+185,data/k400/val/zSLn0oYp7lg_000004_000014.mp4,flipping pancake,129
+186,data/k400/val/0huAN2gC6Pc_000143_000153.mp4,flying kite,130
+187,data/k400/val/9dC_Q5iz4UU_000003_000013.mp4,folding paper,133
+188,data/k400/val/5P18v1xcj-k_000004_000014.mp4,gargling,137
+189,data/k400/val/KjylCj1w0EU_000045_000055.mp4,getting a tattoo,139
+190,data/k400/val/NJunKWF-4Fc_000045_000055.mp4,getting a tattoo,139
+191,data/k400/val/IoBvxLPdWPU_000015_000025.mp4,giving or receiving award,140
+192,data/k400/val/VBTZ6gnM5F0_000000_000010.mp4,golf chipping,141
+193,data/k400/val/cWc5OPYZW5Q_000085_000095.mp4,golf chipping,141
+194,data/k400/val/_C1kBQhX1tE_000073_000083.mp4,golf driving,142
+195,data/k400/val/agHnyx2NFfk_000007_000017.mp4,golf driving,142
+196,data/k400/val/xCf1WwC_fsc_000017_000027.mp4,golf putting,143
+197,data/k400/val/DmZ6PCyYhxs_000014_000024.mp4,grooming horse,146
+198,data/k400/val/Hf_wwUaiUgI_000197_000207.mp4,grooming horse,146
+199,data/k400/val/CewC3deBFCs_000081_000091.mp4,gymnastics tumbling,147
+200,data/k400/val/vJc_Yjqb5As_000024_000034.mp4,hammer throw,148
+201,data/k400/val/7Eo8Rl95Q_M_000028_000038.mp4,headbanging,149
+202,data/k400/val/q_8hDVV_83I_000003_000013.mp4,headbutting,150
+203,data/k400/val/5RIe5niLskU_000004_000014.mp4,high jump,151
+204,data/k400/val/OK2iI2F7KIY_000003_000013.mp4,high jump,151
+205,data/k400/val/BGbKbr0c-9Y_000004_000014.mp4,high kick,152
+206,data/k400/val/zhrC4tzEaRA_000002_000012.mp4,high kick,152
+207,data/k400/val/5-jBTNp5IQA_000075_000085.mp4,hitting baseball,153
+208,data/k400/val/4ClIC0tQRd0_000000_000010.mp4,hockey stop,154
+209,data/k400/val/pUk0o1gjgO4_000038_000048.mp4,hockey stop,154
+210,data/k400/val/BI3EgX_VS4Y_000061_000071.mp4,holding snake,155
+211,data/k400/val/9gqpyYvwiio_000002_000012.mp4,hopscotch,156
+212,data/k400/val/W0UySBGIneo_000004_000014.mp4,hopscotch,156
+213,data/k400/val/mDmKrwW4x8c_000000_000010.mp4,hopscotch,156
+214,data/k400/val/ZSiSZX5UNqY_000015_000025.mp4,hoverboarding,157
+215,data/k400/val/p20tkHqoVO0_000001_000011.mp4,hoverboarding,157
+216,data/k400/val/dhyjeSgvhIA_000003_000013.mp4,hula hooping,159
+217,data/k400/val/Rw2diHglcQE_000002_000012.mp4,hurdling,160
+218,data/k400/val/WstAIUtk7c8_000003_000013.mp4,hurdling,160
+219,data/k400/val/034KeIezQZ8_000000_000010.mp4,hurling (sport),161
+220,data/k400/val/a6av8XInSvs_000679_000689.mp4,hurling (sport),161
+221,data/k400/val/XoCvj2IbVGE_000052_000062.mp4,ironing,165
+222,data/k400/val/6ropBPG4sP8_000037_000047.mp4,javelin throw,166
+223,data/k400/val/Awe_Sf14hPU_000037_000047.mp4,javelin throw,166
+224,data/k400/val/GQ--4QfVpXc_000003_000013.mp4,javelin throw,166
+225,data/k400/val/-4dAJgJgxdE_000015_000025.mp4,jetskiing,167
+226,data/k400/val/16LvYLTlYU4_000148_000158.mp4,jetskiing,167
+227,data/k400/val/4zOMzUZRK0w_000007_000017.mp4,jetskiing,167
+228,data/k400/val/gIlHe-PXcQk_000000_000010.mp4,jetskiing,167
+229,data/k400/val/4Raya03L2xU_000046_000056.mp4,juggling fire,170
+230,data/k400/val/DZTcwFRwMzg_000132_000142.mp4,juggling soccer ball,171
+231,data/k400/val/oNEHCEWJfJE_000073_000083.mp4,juggling soccer ball,171
+232,data/k400/val/yTs5t9Jas6E_000045_000055.mp4,juggling soccer ball,171
+233,data/k400/val/YbRIfxw0V1c_000006_000016.mp4,jumping into pool,172
+234,data/k400/val/UiNXZNFtaoY_000000_000010.mp4,kicking field goal,174
+235,data/k400/val/f6w9rTZW3oc_000079_000089.mp4,kicking field goal,174
+236,data/k400/val/QYplTSs2Orw_000004_000014.mp4,kicking soccer ball,175
+237,data/k400/val/-MLjvAhdJIU_000071_000081.mp4,kissing,176
+238,data/k400/val/04g2ZAlBqzc_000067_000077.mp4,kitesurfing,177
+239,data/k400/val/ehagJeaMzBM_000000_000010.mp4,kitesurfing,177
+240,data/k400/val/iLhH6Ix7DuA_000105_000115.mp4,kitesurfing,177
+241,data/k400/val/ibxrdsR9728_000017_000027.mp4,kitesurfing,177
+242,data/k400/val/pqhJLyudOiY_000164_000174.mp4,knitting,178
+243,data/k400/val/lrceZYtfTQk_000015_000025.mp4,krumping,179
+244,data/k400/val/R559estVW2Y_000026_000036.mp4,laughing,180
+245,data/k400/val/vt_aFyyQgCY_000038_000048.mp4,laughing,180
+246,data/k400/val/cu9smFENJ3E_000013_000023.mp4,long jump,182
+247,data/k400/val/_s0jqvtYFb8_000002_000012.mp4,making a cake,184
+248,data/k400/val/fRoT0JVyU2o_000064_000074.mp4,making a cake,184
+249,data/k400/val/5cbC1OGsnjk_000030_000040.mp4,making a sandwich,185
+250,data/k400/val/UwLV04Yztjg_000225_000235.mp4,making bed,186
+251,data/k400/val/ez3XzoXZkB0_000081_000091.mp4,making bed,186
+252,data/k400/val/feHdqUBdABI_000275_000285.mp4,making bed,186
+253,data/k400/val/qUt7h8WVHEg_000029_000039.mp4,making bed,186
+254,data/k400/val/m3I2xiLM8CA_000168_000178.mp4,making jewelry,187
+255,data/k400/val/leLlcqCFVdU_000135_000145.mp4,making pizza,188
+256,data/k400/val/m5HeFNZ0vxk_000129_000139.mp4,making pizza,188
+257,data/k400/val/BkP_f7PBXho_000003_000013.mp4,massaging back,193
+258,data/k400/val/LJXNAVg9J-4_000463_000473.mp4,massaging back,193
+259,data/k400/val/ikgmpDCWRyk_000093_000103.mp4,massaging back,193
+260,data/k400/val/GwZeJxOVPVE_000092_000102.mp4,massaging feet,194
+261,data/k400/val/icDRrqhq8KY_000031_000041.mp4,mopping floor,198
+262,data/k400/val/BFSI1GSWZF0_000020_000030.mp4,motorcycling,199
+263,data/k400/val/E6U2vHWzTME_000025_000035.mp4,mowing lawn,201
+264,data/k400/val/RoHYo2x9gbc_000109_000119.mp4,mowing lawn,201
+265,data/k400/val/-jMFnMyKNlE_000027_000037.mp4,news anchoring,202
+266,data/k400/val/FPMHX607bgY_000240_000250.mp4,news anchoring,202
+267,data/k400/val/HXIMrqTaqQc_000011_000021.mp4,news anchoring,202
+268,data/k400/val/W06ulT0k80U_000056_000066.mp4,news anchoring,202
+269,data/k400/val/D3DZf_qm1jI_000053_000063.mp4,paragliding,205
+270,data/k400/val/Y5E5Rlsfl94_000017_000027.mp4,paragliding,205
+271,data/k400/val/9kydFUMIQ94_000014_000024.mp4,parkour,207
+272,data/k400/val/N0QcGZtf2yM_000011_000021.mp4,parkour,207
+273,data/k400/val/yrfFFQJNn1Q_000009_000019.mp4,passing American football (in game),208
+274,data/k400/val/HTOc9BM98sM_000001_000011.mp4,passing American football (not in game),209
+275,data/k400/val/yYXb7Y9QfUk_000420_000430.mp4,passing American football (not in game),209
+276,data/k400/val/HTKSQyN_sgc_000007_000017.mp4,peeling apples,210
+277,data/k400/val/sSutdGZ1vEs_000023_000033.mp4,peeling apples,210
+278,data/k400/val/vbJ2Z0ahHuM_000002_000012.mp4,peeling apples,210
+279,data/k400/val/wpOC3OM1-BQ_000008_000018.mp4,peeling potatoes,211
+280,data/k400/val/CX-WRbXJTEQ_000001_000011.mp4,petting animal (not cat),212
+281,data/k400/val/tV8xpJII1LM_000086_000096.mp4,petting animal (not cat),212
+282,data/k400/val/auImcYJIS7k_000001_000011.mp4,petting cat,213
+283,data/k400/val/RVoDHT027wI_000015_000025.mp4,picking fruit,214
+284,data/k400/val/S47k3jJS4ew_000110_000120.mp4,picking fruit,214
+285,data/k400/val/r3554dEyWKU_000029_000039.mp4,picking fruit,214
+286,data/k400/val/rEBI45efv6o_000009_000019.mp4,picking fruit,214
+287,data/k400/val/EQ0L5bCPMUw_000146_000156.mp4,planting trees,215
+288,data/k400/val/EsF39JUatzA_000028_000038.mp4,planting trees,215
+289,data/k400/val/LQa0E8VlU3Q_000016_000026.mp4,planting trees,215
+290,data/k400/val/MdnoPBkyiMA_000139_000149.mp4,planting trees,215
+291,data/k400/val/15Bdq-oFfGw_000033_000043.mp4,plastering,216
+292,data/k400/val/EIJGzKnlMRM_000014_000024.mp4,playing accordion,217
+293,data/k400/val/Psktdk-zi2I_000060_000070.mp4,playing accordion,217
+294,data/k400/val/V6li0T_bsw4_000008_000018.mp4,playing accordion,217
+295,data/k400/val/bChPXNG4JZc_000059_000069.mp4,playing accordion,217
+296,data/k400/val/fK4kD8fXswE_000037_000047.mp4,playing accordion,217
+297,data/k400/val/eg65TYGfajI_000184_000194.mp4,playing badminton,218
+298,data/k400/val/z-M9MLoVh8I_000000_000010.mp4,playing bagpipes,219
+299,data/k400/val/cM5f-bT07gc_000033_000043.mp4,playing basketball,220
+300,data/k400/val/UCwE5xihGyY_000454_000464.mp4,playing cards,222
+301,data/k400/val/676TR3bwLf0_000570_000580.mp4,playing chess,224
+302,data/k400/val/AoH_c-tux7Q_000005_000015.mp4,playing chess,224
+303,data/k400/val/BERPEnDo5Gs_000083_000093.mp4,playing chess,224
+304,data/k400/val/WY9TXZ2ODgw_000150_000160.mp4,playing chess,224
+305,data/k400/val/YY_Xrn6H8A0_000021_000031.mp4,playing chess,224
+306,data/k400/val/WNu0Rwwlruc_000025_000035.mp4,playing clarinet,225
+307,data/k400/val/_VrEbrD1pq0_000020_000030.mp4,playing clarinet,225
+308,data/k400/val/aglpXyfqd-8_000384_000394.mp4,playing clarinet,225
+309,data/k400/val/g4wZMQnBc3Y_000191_000201.mp4,playing clarinet,225
+310,data/k400/val/3uUNmUJUoyg_000003_000013.mp4,playing cricket,227
+311,data/k400/val/B9iL4uBr4TM_000259_000269.mp4,playing cymbals,228
+312,data/k400/val/VyTYSl1GL_Y_000017_000027.mp4,playing cymbals,228
+313,data/k400/val/2ezT7E6g8Ew_000044_000054.mp4,playing didgeridoo,229
+314,data/k400/val/FncITQdQdTI_000213_000223.mp4,playing didgeridoo,229
+315,data/k400/val/9_GQ2Sz20ds_000390_000400.mp4,playing flute,231
+316,data/k400/val/BVMxdSXghoI_000113_000123.mp4,playing flute,231
+317,data/k400/val/fhCvoCCR3n8_000080_000090.mp4,playing flute,231
+318,data/k400/val/ysjCIR7SkJU_000141_000151.mp4,playing guitar,232
+319,data/k400/val/zdD3sBNWwiY_000159_000169.mp4,playing guitar,232
+320,data/k400/val/o1EY8MyQ_Vw_000112_000122.mp4,playing harp,234
+321,data/k400/val/ucm_elXD0Dw_000001_000011.mp4,playing harp,234
+322,data/k400/val/FFFDl7ISAGM_000061_000071.mp4,playing ice hockey,235
+323,data/k400/val/uTqS0rpvmFY_000217_000227.mp4,playing keyboard,236
+324,data/k400/val/vATDIXjOABQ_000037_000047.mp4,playing keyboard,236
+325,data/k400/val/1KsJ-NkGhuY_000055_000065.mp4,playing monopoly,238
+326,data/k400/val/Krkt-jlVJOc_000013_000023.mp4,playing organ,239
+327,data/k400/val/QdPCdXW7zIw_000005_000015.mp4,playing paintball,240
+328,data/k400/val/6ogTWf6G47Q_000009_000019.mp4,playing piano,241
+329,data/k400/val/L_KiHjIcRPY_000000_000010.mp4,playing piano,241
+330,data/k400/val/QK0rpdpN8oc_000087_000097.mp4,playing piano,241
+331,data/k400/val/zvMPX99N2IE_000019_000029.mp4,playing piano,241
+332,data/k400/val/KIs4zRu6ct4_000072_000082.mp4,playing recorder,243
+333,data/k400/val/NcDrVMPY2TY_000026_000036.mp4,playing recorder,243
+334,data/k400/val/ZOWUraZn_wQ_000049_000059.mp4,playing recorder,243
+335,data/k400/val/pTgIYOnWrw0_000047_000057.mp4,playing trombone,247
+336,data/k400/val/RsiyfT6ursA_000019_000029.mp4,playing ukulele,249
+337,data/k400/val/kDNG-8C2Jrs_000000_000010.mp4,playing xylophone,252
+338,data/k400/val/U7fP08R37EA_000013_000023.mp4,pull ups,255
+339,data/k400/val/t6-eBFhPsxo_000248_000258.mp4,pumping fist,256
+340,data/k400/val/dwll4E2DuCk_000014_000024.mp4,pumping gas,257
+341,data/k400/val/sqOojwuFaFU_000002_000012.mp4,punching bag,258
+342,data/k400/val/7Cq2K8_pMuQ_000000_000010.mp4,push up,260
+343,data/k400/val/vhcRlQi_QAk_000060_000070.mp4,push up,260
+344,data/k400/val/qabdX5N01XE_000018_000028.mp4,pushing cart,262
+345,data/k400/val/oWz9whBx48c_000023_000033.mp4,pushing wheelchair,263
+346,data/k400/val/sXa7ytSIvS8_000015_000025.mp4,reading book,264
+347,data/k400/val/vfg1lJO8XEE_003045_003055.mp4,reading book,264
+348,data/k400/val/XREc823C5zs_000000_000010.mp4,reading newspaper,265
+349,data/k400/val/a3Kz2fRQ_DQ_000014_000024.mp4,riding camel,268
+350,data/k400/val/fAjpgUcycuA_000002_000012.mp4,riding camel,268
+351,data/k400/val/z8rNn0lEm7o_000001_000011.mp4,riding camel,268
+352,data/k400/val/WdYml1ecdws_000318_000328.mp4,riding elephant,269
+353,data/k400/val/d2GYYj-nr8Y_000012_000022.mp4,riding elephant,269
+354,data/k400/val/JUXAWfhRIHQ_000007_000017.mp4,riding mechanical bull,270
+355,data/k400/val/t9EZF58xIIA_000003_000013.mp4,riding mechanical bull,270
+356,data/k400/val/_IrTDkCFrjA_000245_000255.mp4,riding mule,272
+357,data/k400/val/gi-RZ_7fdw4_000015_000025.mp4,riding mule,272
+358,data/k400/val/W5KvNJu5JBk_000040_000050.mp4,riding or walking with horse,273
+359,data/k400/val/Ja1kQFHQUmQ_000056_000066.mp4,riding scooter,274
+360,data/k400/val/SBXiVIuWhXw_000112_000122.mp4,riding scooter,274
+361,data/k400/val/jt7osTBdLaI_000019_000029.mp4,riding scooter,274
+362,data/k400/val/4tnMjsQxGoI_000052_000062.mp4,ripping paper,276
+363,data/k400/val/JDye9vNFlXk_000041_000051.mp4,robot dancing,277
+364,data/k400/val/VJSoDz7fJtM_000024_000034.mp4,robot dancing,277
+365,data/k400/val/W-wCrgmh3Ww_000057_000067.mp4,robot dancing,277
+366,data/k400/val/WFBA0RxdDqw_000027_000037.mp4,robot dancing,277
+367,data/k400/val/iLWA-B4T39E_000097_000107.mp4,rock climbing,278
+368,data/k400/val/YGlJvdrR66Q_000006_000016.mp4,rock scissors paper,279
+369,data/k400/val/gr0tgkKykCo_000041_000051.mp4,rock scissors paper,279
+370,data/k400/val/7XpLffye0IA_000100_000110.mp4,roller skating,280
+371,data/k400/val/Gb6nvJnagIM_000008_000018.mp4,roller skating,280
+372,data/k400/val/Igu7XnKJvVg_000178_000188.mp4,roller skating,280
+373,data/k400/val/irC4sp62Tno_000045_000055.mp4,roller skating,280
+374,data/k400/val/ss1ue2LRTTw_000018_000028.mp4,roller skating,280
+375,data/k400/val/-KvDvP44fxc_000025_000035.mp4,running on treadmill,281
+376,data/k400/val/gtK3me1QW5s_000000_000010.mp4,running on treadmill,281
+377,data/k400/val/tbpNDH45I7A_000000_000010.mp4,running on treadmill,281
+378,data/k400/val/uczY0dCCtAE_000006_000016.mp4,sailing,282
+379,data/k400/val/wZ46N9NSVGc_000005_000015.mp4,sailing,282
+380,data/k400/val/QIs9WxFel9Q_000010_000020.mp4,sanding floor,284
+381,data/k400/val/7kOIsbGram0_000081_000091.mp4,scrambling eggs,285
+382,data/k400/val/tqyE7113p3w_000094_000104.mp4,scrambling eggs,285
+383,data/k400/val/lL8nM9arQ2U_000018_000028.mp4,scuba diving,286
+384,data/k400/val/IgVjgWUhLgk_000164_000174.mp4,setting table,287
+385,data/k400/val/BSqqbxk_HXU_000160_000170.mp4,shaking hands,288
+386,data/k400/val/dVF_amO3TAE_000015_000025.mp4,shaking head,289
+387,data/k400/val/5Ly_VZt6F1w_000296_000306.mp4,shaving head,292
+388,data/k400/val/7NK4RGHxrpg_000348_000358.mp4,shearing sheep,294
+389,data/k400/val/1fBqwvl99DQ_000009_000019.mp4,shining shoes,295
+390,data/k400/val/xQLZf-1ePZw_000029_000039.mp4,shooting basketball,296
+391,data/k400/val/XbdRgFKZfqo_000002_000012.mp4,shooting goal (soccer),297
+392,data/k400/val/zH2seyEaMZ8_000002_000012.mp4,shot put,298
+393,data/k400/val/_5dyLrtc5fQ_000006_000016.mp4,shoveling snow,299
+394,data/k400/val/njNPDxLHZVQ_000102_000112.mp4,shoveling snow,299
+395,data/k400/val/cPQEiIvzGUs_000148_000158.mp4,shuffling cards,301
+396,data/k400/val/6Us-MHfbbUo_000002_000012.mp4,side kick,302
+397,data/k400/val/qSnx2sgMkB8_000014_000024.mp4,singing,304
+398,data/k400/val/-bQfgNsszaQ_000172_000182.mp4,skateboarding,306
+399,data/k400/val/0QOoTTe7cZc_000228_000238.mp4,skateboarding,306
+400,data/k400/val/8cDIhcJ75Bg_000004_000014.mp4,ski jumping,307
+401,data/k400/val/XQUsRpJ1A_Y_000001_000011.mp4,ski jumping,307
+402,data/k400/val/f7M_qy6hHb0_000004_000014.mp4,ski jumping,307
+403,data/k400/val/0lCWhhGesNI_000055_000065.mp4,skiing (not slalom or crosscountry),308
+404,data/k400/val/500qpQc_cFQ_000989_000999.mp4,skiing crosscountry,309
+405,data/k400/val/hx-AbPBIrFE_000039_000049.mp4,skiing slalom,310
+406,data/k400/val/PLsmDAzO32M_000019_000029.mp4,slacklining,313
+407,data/k400/val/DHU_kFpaHqE_000013_000023.mp4,sled dog racing,315
+408,data/k400/val/lVMnKwth2F0_000000_000010.mp4,sled dog racing,315
+409,data/k400/val/sOd0G1tpDWw_000019_000029.mp4,sled dog racing,315
+410,data/k400/val/YIlr1ABiWzY_001171_001181.mp4,smoking,316
+411,data/k400/val/ceNmNxmm8ko_000007_000017.mp4,smoking hookah,317
+412,data/k400/val/VttvNr21aXQ_000002_000012.mp4,snatch weight lifting,318
+413,data/k400/val/qVoiEgXxOTU_000001_000011.mp4,sneezing,319
+414,data/k400/val/1hnDIZGrBGE_000036_000046.mp4,sniffing,320
+415,data/k400/val/qZpkfNXF-ls_000004_000014.mp4,snowboarding,322
+416,data/k400/val/AXY43w5ZRCs_000036_000046.mp4,snowmobiling,324
+417,data/k400/val/RYMNHl661sI_000052_000062.mp4,snowmobiling,324
+418,data/k400/val/bq4btBTSbqQ_000055_000065.mp4,snowmobiling,324
+419,data/k400/val/JXspjyGOyxs_000011_000021.mp4,spinning poi,326
+420,data/k400/val/PnNDSAt3kz8_000001_000011.mp4,spinning poi,326
+421,data/k400/val/gs64PqwqOfc_000146_000156.mp4,spray painting,327
+422,data/k400/val/XUSO3MUZhXM_000021_000031.mp4,spraying,328
+423,data/k400/val/Ap9JF7XdUx0_000005_000015.mp4,springboard diving,329
+424,data/k400/val/RI33E_IS8C8_000030_000040.mp4,sticking tongue out,331
+425,data/k400/val/yAlleHGM43U_000003_000013.mp4,sticking tongue out,331
+426,data/k400/val/aC_fmSaB-hw_000203_000213.mp4,stomping grapes,332
+427,data/k400/val/cXzqsXSHvRI_000137_000147.mp4,stomping grapes,332
+428,data/k400/val/tU5r3RENHWs_000242_000252.mp4,stretching arm,333
+429,data/k400/val/H6McgunOIQw_000001_000011.mp4,strumming guitar,335
+430,data/k400/val/NCu1OwOZsBk_000065_000075.mp4,strumming guitar,335
+431,data/k400/val/QCkMxTt829k_000004_000014.mp4,surfing crowd,336
+432,data/k400/val/7aGVsi5ZgMI_000023_000033.mp4,swimming backstroke,339
+433,data/k400/val/7LkTInA4dFU_000027_000037.mp4,swinging legs,343
+434,data/k400/val/rj3_vYfmm6s_000007_000017.mp4,swinging legs,343
+435,data/k400/val/IO3qDxDsqcc_000206_000216.mp4,tai chi,346
+436,data/k400/val/nVsFa-kiFtg_000012_000022.mp4,tai chi,346
+437,data/k400/val/1pNdXcMQX_8_000173_000183.mp4,tap dancing,349
+438,data/k400/val/PehoEu4WfEI_000049_000059.mp4,tap dancing,349
+439,data/k400/val/_yinJwi935U_000081_000091.mp4,tap dancing,349
+440,data/k400/val/nOTDJUNdrcc_000060_000070.mp4,tap dancing,349
+441,data/k400/val/XUfeSASNbtU_000012_000022.mp4,tapping guitar,350
+442,data/k400/val/tSFY2jfmdt8_000028_000038.mp4,tapping guitar,350
+443,data/k400/val/e-ft8E6v_K4_000157_000167.mp4,tapping pen,351
+444,data/k400/val/BlRsWeiFhYo_000018_000028.mp4,tasting beer,352
+445,data/k400/val/RId4Ux1ynmI_000110_000120.mp4,tasting beer,352
+446,data/k400/val/IaZMxOH0FNU_000105_000115.mp4,testifying,354
+447,data/k400/val/omn_2FYAQUE_000099_000109.mp4,texting,355
+448,data/k400/val/W8ynnOWJHiI_000009_000019.mp4,throwing axe,356
+449,data/k400/val/ajjAhk-SwaQ_000000_000010.mp4,throwing axe,356
+450,data/k400/val/asHI8rkoW-0_000071_000081.mp4,throwing axe,356
+451,data/k400/val/pQW2gNEHG6U_000035_000045.mp4,throwing axe,356
+452,data/k400/val/c_bwy8fnf2w_000001_000011.mp4,throwing ball,357
+453,data/k400/val/pdJcFaPJXK0_000017_000027.mp4,throwing ball,357
+454,data/k400/val/6MjDy2JOcXY_000066_000076.mp4,throwing discus,358
+455,data/k400/val/BRUpBkO_0Rg_000004_000014.mp4,throwing discus,358
+456,data/k400/val/Y3kxj7-bBbE_000033_000043.mp4,throwing discus,358
+457,data/k400/val/lZ03Bg64F-M_000005_000015.mp4,throwing discus,358
+458,data/k400/val/gCj-R26j7J0_001386_001396.mp4,tickling,359
+459,data/k400/val/tWLGgZrn5vI_000027_000037.mp4,tickling,359
+460,data/k400/val/Z-J_ltlrU58_000020_000030.mp4,tobogganing,360
+461,data/k400/val/aK1X9MpZJ6w_000000_000010.mp4,tobogganing,360
+462,data/k400/val/MAOjUTAv1QQ_000128_000138.mp4,tossing salad,362
+463,data/k400/val/jvAicX71Boc_000039_000049.mp4,tossing salad,362
+464,data/k400/val/P-kI9SEZkOk_000004_000014.mp4,trapezing,364
+465,data/k400/val/xXiaKJAUt10_000003_000013.mp4,trapezing,364
+466,data/k400/val/SluO14zxXCE_000002_000012.mp4,trimming trees,366
+467,data/k400/val/y-6TidMDXXk_000073_000083.mp4,tying bow tie,368
+468,data/k400/val/P1mLvaOUj_0_000028_000038.mp4,tying knot (not on a tie),369
+469,data/k400/val/zVlHUt0eWbU_000090_000100.mp4,tying tie,370
+470,data/k400/val/-5HXuZ5ryYo_000224_000234.mp4,using computer,373
+471,data/k400/val/1aEvgs8pTx0_000002_000012.mp4,using computer,373
+472,data/k400/val/7syG91IyRrU_000021_000031.mp4,using remote controller (not gaming),374
+473,data/k400/val/JBuJchVC_Wc_000039_000049.mp4,using remote controller (not gaming),374
+474,data/k400/val/ka3NPD_Bpd0_000113_000123.mp4,using remote controller (not gaming),374
+475,data/k400/val/WUzgd7C1pWA_000101_000111.mp4,using segway,375
+476,data/k400/val/eckvkGqA8Xw_000037_000047.mp4,using segway,375
+477,data/k400/val/4md6zudTjWQ_000003_000013.mp4,vault,376
+478,data/k400/val/-5FU8vEKtyE_000009_000019.mp4,waiting in line,377
+479,data/k400/val/6mhMQ_6YaEI_000195_000205.mp4,waiting in line,377
+480,data/k400/val/JZOVUs91YWk_000001_000011.mp4,waiting in line,377
+481,data/k400/val/KbXOZPf5laY_000026_000036.mp4,walking the dog,378
+482,data/k400/val/6bW84cNhI7U_000033_000043.mp4,washing dishes,379
+483,data/k400/val/75f_k5ynUVw_000005_000015.mp4,washing hands,382
+484,data/k400/val/96ADEnJy4GU_000007_000017.mp4,washing hands,382
+485,data/k400/val/CoIUJMIyFyM_000012_000022.mp4,water sliding,384
+486,data/k400/val/0zKzCuulC4g_000088_000098.mp4,waxing back,386
+487,data/k400/val/BM3yGu1uCKE_000019_000029.mp4,waxing back,386
+488,data/k400/val/nxv0xsCFGoE_000124_000134.mp4,waxing back,386
+489,data/k400/val/BBDR-x9Pz6Q_000019_000029.mp4,waxing chest,387
+490,data/k400/val/SDKBtSENGOA_000001_000011.mp4,waxing legs,389
+491,data/k400/val/TslsLmGSxeg_000343_000353.mp4,weaving basket,390
+492,data/k400/val/FqOUejbG4jg_000046_000056.mp4,welding,391
+493,data/k400/val/Hgo7xkutPno_000059_000069.mp4,welding,391
+494,data/k400/val/drUA18CfUbQ_000012_000022.mp4,welding,391
+495,data/k400/val/VrBvdBcb0HU_000195_000205.mp4,windsurfing,393
+496,data/k400/val/zR7QR6JxyRs_000124_000134.mp4,writing,396
+497,data/k400/val/B_jqMnvs5Y8_000034_000044.mp4,yawning,397
+498,data/k400/val/BtuHXqEu75E_000088_000098.mp4,yawning,397
+499,data/k400/val/sxCLSq1h3DI_000002_000012.mp4,yoga,398

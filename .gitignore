@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+runs/
+third_party/
+*.pt
+*.npz
+*.ckpt
+*.pth

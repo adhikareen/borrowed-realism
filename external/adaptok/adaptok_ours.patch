@@ -1,0 +1,265 @@
+diff --git a/ar/generate.py b/ar/generate.py
+index ff9c75b..3199900 100644
+--- a/ar/generate.py
++++ b/ar/generate.py
+@@ -111,12 +111,15 @@ def decode_n_tokens(
+     model, cur_token: torch.Tensor, input_pos: torch.Tensor, num_new_tokens: int, 
+     cfg_scale: float, cfg_interval: int,
+     tot_blocks: int=1,
++    cap_per_block=None,
+     **sampling_kwargs):
+     new_tokens, new_probs = [], []
+     cfg_flag = True
+ 
+     B = cur_token.size(0)
+     toks_per_group = model.max_seq_length // tot_blocks - 1
++    if cap_per_block is not None:
++        toks_per_group = min(toks_per_group, int(cap_per_block))
+     current_block_lengths = torch.zeros(B, dtype=torch.long, device=cur_token.device)
+     current_block_idx = torch.zeros(B, dtype=torch.long, device=cur_token.device)
+     finished = torch.zeros(B, dtype=torch.bool, device=cur_token.device)
+@@ -166,7 +169,7 @@ def decode_n_tokens(
+ 
+ 
+ @torch.no_grad()
+-def generate(model, cond, max_new_tokens, emb_masks=None, cfg_scale=1.0, cfg_interval=-1, tot_blocks=1, **sampling_kwargs):
++def generate(model, cond, max_new_tokens, emb_masks=None, cfg_scale=1.0, cfg_interval=-1, tot_blocks=1, cap_per_block=None, **sampling_kwargs):
+     if model.frame_prediction:
+         assert cfg_scale == 1.0, "frame prediction requires cfg_scale=1.0 (no classifier-free guidance)"
+         cond_combined = cond
+@@ -213,7 +216,7 @@ def generate(model, cond, max_new_tokens, emb_masks=None, cfg_scale=1.0, cfg_int
+ 
+     input_pos = torch.tensor([T], device=device, dtype=torch.int)
+     
+-    generated_tokens, _, latent_nums = decode_n_tokens(model, next_token, input_pos, max_new_tokens-1, cfg_scale, cfg_interval, tot_blocks=tot_blocks, **sampling_kwargs)
++    generated_tokens, _, latent_nums = decode_n_tokens(model, next_token, input_pos, max_new_tokens-1, cfg_scale, cfg_interval, tot_blocks=tot_blocks, cap_per_block=cap_per_block, **sampling_kwargs)
+     seq[:, T+1:] = torch.cat(generated_tokens, dim=1)
+ 
+     if latent_nums is not None:
+diff --git a/datasets/adap_priors.py b/datasets/adap_priors.py
+index e595198..67fda97 100644
+--- a/datasets/adap_priors.py
++++ b/datasets/adap_priors.py
+@@ -12,6 +12,8 @@ ilp_adap_each_block_t1024_b4 = {
+ 
+ ilp_adap_each_block_t2048_b4 = {k * 2: [2 *i for i in v] for k, v in ilp_adap_each_block_t1024_b4.items()}
+ 
++ilp_adap_each_block_t2048_b4[212] = [424, 175, 134, 117]
++
+ 
+ adap_each_block = {
+     "ilp_t1024_b4": ilp_adap_each_block_t1024_b4,
+diff --git a/datasets/video_dataset.py b/datasets/video_dataset.py
+index ac3b680..f0dd6f4 100644
+--- a/datasets/video_dataset.py
++++ b/datasets/video_dataset.py
+@@ -312,8 +312,14 @@ class VideoDataset(Dataset):
+                     index_map = {}
+                     video_len = {}
+                     index = 0
++                    n_skipped = 0
+                     for vid in tqdm(vid_list, desc='Indexing videos'):
+-                        vr = decord.VideoReader(vid)
++                        try:
++                            vr = decord.VideoReader(vid)
++                        except Exception as e:
++                            n_skipped += 1
++                            print(f"[index] skipping unreadable video ({n_skipped}): {vid} ({e})")
++                            continue
+                         video_len[vid] = len(vr)
+                         for start_idx in range(0, len(vr), self.use_all_frames_step):
+                             if start_idx + self.frame_num <= len(vr):
+diff --git a/models/adaptok_ar.py b/models/adaptok_ar.py
+index f578707..393b24c 100644
+--- a/models/adaptok_ar.py
++++ b/models/adaptok_ar.py
+@@ -434,6 +434,7 @@ class AdapTok_AR(nn.Module, PyTorchModelHubMixin):
+         top_k=0,
+         top_p=1.0,
+         seq_length=None,
++        cap_per_block=None,
+     ):
+         seq_length = self.max_seq_length if seq_length is None else seq_length     
+         with self.sampling():
+@@ -441,7 +442,8 @@ class AdapTok_AR(nn.Module, PyTorchModelHubMixin):
+                 self, c, seq_length,
+                 cfg_scale=cfg_scale, cfg_interval=cfg_interval,
+                 temperature=temperature, top_k=top_k,
+-                top_p=top_p, sample_logits=True,  tot_blocks=self.tot_blocks
++                top_p=top_p, sample_logits=True,  tot_blocks=self.tot_blocks,
++                cap_per_block=cap_per_block,
+             )   
+         return sampled_seqs, latent_nums
+     
+@@ -487,7 +489,11 @@ def LLAMA_ABS_B(**kwargs):
+ def LLAMA_ABS_S(**kwargs):
+     return AdapTok_AR(ModelArgs(n_layer=12, n_head=6, dim=384, **kwargs)) # 21.7M
+ 
++def LLAMA_ABS_XS(**kwargs):
++    return AdapTok_AR(ModelArgs(n_layer=11, n_head=8, dim=640, **kwargs))
++
+ adaptok_ar_models = {
++    'llama-abs-XS': LLAMA_ABS_XS,
+     'llama-abs-S': LLAMA_ABS_S,
+     'llama-abs-B': LLAMA_ABS_B,
+     'llama-abs-L': LLAMA_ABS_L,
+diff --git a/sample.py b/sample.py
+index c455fe2..63bca93 100644
+--- a/sample.py
++++ b/sample.py
+@@ -71,6 +71,9 @@ def parse_args(input_args=None):
+     parser.add_argument('--dataset_csv', type=str, default='ucf101_train.csv', help='Path to the dataset csv')
+     parser.add_argument('--dataset_split_seed', type=int, default=42, help='Seed for splitting the dataset')
+     parser.add_argument('--num_cond_frames', type=int, default=None, help='Number of frames to condition on for frame prediction')
++    parser.add_argument('--cap_per_block', type=int, default=0, help='cap tokens/block at gen (0=default); 212 -> 848 uniform')
++    parser.add_argument('--fvd_resolution', type=int, default=0, help='if >0, resize to this resolution before FVD')
++    parser.add_argument('--tokenizer_decode_fp32', action='store_true', help='decode tokenizer in fp32')
+     
+     parser.add_argument('--frame_prediction', '--fp', action='store_true', help='Predict frames instead of sampling videos')
+     parser.add_argument('--stats_only', action='store_true', help='Only compute stats, do not save samples')
+@@ -101,16 +104,30 @@ def sample_videos(
+     temperature=1.0,
+     top_k=0,
+     top_p=1.0,
++    cap_per_block=None,
+     dtype=torch.bfloat16,
+     dataset_split_seed=42,
+     num_samples_total=None,
+     stats_only=False,
++    fvd_resolution=0,
++    tokenizer_decode_fp32=False,
+ ):
+     torch.backends.cudnn.benchmark = True
+     torch.set_float32_matmul_precision('high')
+ 
+     print(f'Using dataset csv: {dataset_csv}')
+     print(f'Saving samples to {output_dir}...')
++    print(f'fvd_resolution={fvd_resolution}')
++
++    _resize_tf = torchvision.transforms.Resize((fvd_resolution, fvd_resolution)) if fvd_resolution and fvd_resolution > 0 else None
++    def _maybe_resize(video):
++        if _resize_tf is None:
++            return video
++        t = video.shape[2]
++        video = rearrange(video, 'b c t h w -> (b t) c h w')
++        video = _resize_tf(video)
++        video = rearrange(video, '(b t) c h w -> b c t h w', t=t)
++        return video
+ 
+     if not isinstance(dtype, torch.dtype):
+         assert isinstance(dtype, str), f"Invalid dtype: {dtype}"
+@@ -119,7 +137,11 @@ def sample_videos(
+     adaptok_ar_model = adaptok_ar_model.to(dtype)
+     adaptok_ar_model.eval()
+ 
+-    adaptok_tokenizer.to(torch.float16)  # force fp16 for AdapTok
++    if tokenizer_decode_fp32:
++        adaptok_tokenizer.to(torch.float32)
++        print('tokenizer decode in fp32')
++    else:
++        adaptok_tokenizer.to(torch.float16)
+     adaptok_tokenizer.eval()
+ 
+     assert adaptok_ar_model.device == adaptok_tokenizer.device, "Models must be on the same device"
+@@ -184,12 +206,17 @@ def sample_videos(
+             cfg_scale=cfg_scale, cfg_interval=cfg_interval,
+             temperature=temperature,
+             top_k=top_k,
+-            top_p=top_p
++            top_p=top_p,
++            cap_per_block=cap_per_block,
+         )
+ 
+         if latent_nums is not None:
+             idx = torch.arange(sampled_seqs.shape[1], device=sampled_seqs.device).view(1, -1)
+             valid = idx < (latent_nums.sum(dim=-1) + latent_nums.shape[-1]).unsqueeze(-1)
++            _tot = latent_nums.sum(dim=-1).float()
++            print(f'[budget] batch {i}: mean_total_tokens={_tot.mean().item():.1f} '
++                  f'min={_tot.min().item():.0f} max={_tot.max().item():.0f} '
++                  f'per_block_mean={latent_nums.float().mean(dim=0).tolist()}')
+         else:
+             valid = None
+ 
+@@ -207,14 +235,19 @@ def sample_videos(
+         # Decode sequences
+         sampled_batch = adaptok_tokenizer.decode_from_bottleneck(sampled_seqs, latent_nums, block_sep_id=block_sep_id)  # (b, c, t, h, w)
+         samples = sampled_batch.float().clamp(0., 1.)
++        if i == 0:
++            print(f'[validity] batch0 samples shape={tuple(samples.shape)} '
++                  f'mean={samples.mean().item():.4f} std={samples.std().item():.4f} '
++                  f'min={samples.min().item():.4f} max={samples.max().item():.4f}')
+ 
+         if (i + 1) * sample_batch_size > num_samples:
+             samples = samples[:num_samples - i * sample_batch_size]
+             orig_video = orig_video[:num_samples - i * sample_batch_size]
+ 
+-        # Compute FVD stats
+-        sample_i3d_feats = fvd_calculator.get_feature_stats_for_batch(samples, sample_i3d_feats)
+-        orig_i3d_feats = fvd_calculator.get_feature_stats_for_batch(orig_video, orig_i3d_feats)
++        samples_fvd = _maybe_resize(samples).contiguous()
++        orig_fvd = _maybe_resize(orig_video).contiguous()
++        sample_i3d_feats = fvd_calculator.get_feature_stats_for_batch(samples_fvd, sample_i3d_feats)
++        orig_i3d_feats = fvd_calculator.get_feature_stats_for_batch(orig_fvd, orig_i3d_feats)
+ 
+         if not stats_only:
+             samples_cpu = samples.cpu()
+@@ -261,6 +295,7 @@ def predict_frames(
+     temperature=1.0,
+     top_k=0,
+     top_p=1.0,
++    cap_per_block=None,
+     dtype=torch.bfloat16,
+     dataset_split_seed=42,
+     num_samples_total=None,
+@@ -378,9 +413,16 @@ def predict_frames(
+             cfg_scale=cfg_scale, cfg_interval=cfg_interval,
+             temperature=temperature, 
+             top_k=top_k,
+-            top_p=top_p
++            top_p=top_p,
++            cap_per_block=cap_per_block,
+         )
+ 
++        if latent_nums is not None:
++            _tot = latent_nums.sum(dim=-1).float()
++            print(f'[budget] batch {i}: mean_total_tokens={_tot.mean().item():.1f} '
++                  f'min={_tot.min().item():.0f} max={_tot.max().item():.0f} '
++                  f'per_block_mean={latent_nums.float().mean(dim=0).tolist()}')
++
+         if hasattr(adaptok_ar_model, "start_ar_block_idx") and adaptok_ar_model.start_ar_block_idx > 0:
+             start_blk = adaptok_ar_model.start_ar_block_idx
+             toks_per_group = adaptok_tokenizer.bottleneck_token_num // (latent_nums.shape[-1] + start_blk)
+@@ -405,6 +448,11 @@ def predict_frames(
+         sampled_batch = resize_video(sampled_batch.clamp(0., 1.)).contiguous() # 64 x 64 spatial resolution
+         orig_video = resize_video(data['gt'].clamp(0., 1.)).contiguous() # 64 x 64 spatial resolution
+ 
++        if i == 0:
++            print(f'[validity] batch0 samples shape={tuple(sampled_batch.shape)} '
++                  f'mean={sampled_batch.mean().item():.4f} std={sampled_batch.std().item():.4f} '
++                  f'min={sampled_batch.min().item():.4f} max={sampled_batch.max().item():.4f}')
++
+         # Compute FVD stats
+         sample_i3d_feats = fvd_calculator.get_feature_stats_for_batch(sampled_batch, sample_i3d_feats) 
+         orig_i3d_feats = fvd_calculator.get_feature_stats_for_batch(orig_video, orig_i3d_feats) 
+@@ -497,6 +545,7 @@ def main(args):
+                 temperature=args.temperature,
+                 top_k=args.top_k,
+                 top_p=args.top_p,
++                cap_per_block=(args.cap_per_block if args.cap_per_block>0 else None),
+                 dtype=args.dtype,
+                 dataset_split_seed=args.dataset_split_seed,
+                 num_samples_total=args.num_samples_total,
+@@ -519,10 +568,13 @@ def main(args):
+                 temperature=args.temperature,
+                 top_k=args.top_k,
+                 top_p=args.top_p,
++                cap_per_block=(args.cap_per_block if args.cap_per_block>0 else None),
+                 dtype=args.dtype,
+                 dataset_split_seed=args.dataset_split_seed,
+                 num_samples_total=args.num_samples_total,
+                 stats_only=args.stats_only,
++                fvd_resolution=args.fvd_resolution,
++                tokenizer_decode_fp32=args.tokenizer_decode_fp32,
+             )
+ 
+ 
